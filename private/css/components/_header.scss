@@ -1,16 +1,79 @@
 header {
-
-    @media (min-width: 880px) {
+        display:block;
         min-width:880px;
         max-width:1280px;
         margin: 0 auto;
+
+        @media (max-width: 880px) {
+            display:block;
+            max-width:880px;
+            min-width:350px;
+            margin: 0 auto;
+        }
+}
+
+.header-wrapper {
+    height:125px;
+    padding:1.5em;
+}
+
+.top-bar-wrapper {
+    height:77px;
+    display:block;
+}
+
+.left-block {
+    float:left;
+    max-width:500px;
+    width:100%;
+
+    h4 {
+        font-weight: 600;
+        font-style: italic;
+        color: #588d32;
+        font-size: 1.4em;
+        letter-spacing: -0.02em;
+        line-height: 1;
+        margin-left: 1em
+    }
+}
+
+.left-block-icon-img{
+    display:inline-block;
+    background-image: url("/images/logo-HPF.svg");
+    max-width: 7.5em;
+    height: 100%;
+    background-size:cover;
+}
+
+.right-block {
+    float:right;
+
+    ul {
+        
+        li {
+            display:inline-block;
+            margin-right:20px;
+
+            a {
+                padding: 1.25rem 0;
+                font-size: 0.875em;
+                line-height: 1;
+                color: #666;
+            }
+        }
+    }
+}
+
+.navi-bar-items {
+    display:inline-block;
+
+    li {
+        display:inline-block;
     }
 
-    
-    .left-block-icon-img{
-        background-image: url("/images/logo-HPF.svg");
-        max-width: 7.5em;
-        height: 77px;
-        background-size:cover;
-    }
+        a {
+            padding: 1.25rem 0;
+            font-size: 0.875em;
+        }
 }
