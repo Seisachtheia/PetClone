@@ -1,79 +1,54 @@
 header {
         display:block;
-        min-width:880px;
+        min-width:$desktop;
         max-width:1280px;
         margin: 0 auto;
 
-        @media (max-width: 880px) {
+        @media (max-width: $desktop) {
             display:block;
-            max-width:880px;
+            max-width:$desktop;
             min-width:350px;
             margin: 0 auto;
         }
 }
 
-.header-wrapper {
-    height:125px;
-    padding:1.5em;
-}
-
 .top-bar-wrapper {
-    height:77px;
-    display:block;
-}
+    max-height:125px;
+    padding:1.5em;
+    
+    .left-block {
+        position:relative;
+    
+        .logo {
+            background-image: url("/images/logo-HPF.svg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:77px;
+            width:120px;
+            
+        }
 
-.left-block {
-    float:left;
-    max-width:500px;
-    width:100%;
-
-    h4 {
-        font-weight: 600;
-        font-style: italic;
-        color: #588d32;
-        font-size: 1.4em;
-        letter-spacing: -0.02em;
-        line-height: 1;
-        margin-left: 1em
+        h4 {
+            position:absolute;
+            bottom:0;
+            left: calc(125px + 1.6em);
+            font-weight: 600;
+            font-style: italic;
+            color: #588d32;
+            font-size: 1.4em;
+            letter-spacing: -0.02em;
+            line-height: 1
+        }
+    
     }
-}
 
-.left-block-icon-img{
-    display:inline-block;
-    background-image: url("/images/logo-HPF.svg");
-    max-width: 7.5em;
-    height: 100%;
-    background-size:cover;
-}
+    .right-block {
+        position:relative;
 
-.right-block {
-    float:right;
-
-    ul {
-        
-        li {
+        .right-block-account-buttons {
             display:inline-block;
-            margin-right:20px;
-
-            a {
-                padding: 1.25rem 0;
-                font-size: 0.875em;
-                line-height: 1;
-                color: #666;
-            }
         }
     }
-}
 
-.navi-bar-items {
-    display:inline-block;
-
-    li {
-        display:inline-block;
-    }
-
-        a {
-            padding: 1.25rem 0;
-            font-size: 0.875em;
-        }
 }
