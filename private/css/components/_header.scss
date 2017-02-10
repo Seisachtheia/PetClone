@@ -12,14 +12,16 @@ header {
         }
 }
 
+
 .top-bar-wrapper {
     max-height:125px;
     padding:1.5em;
-    
-    .left-block {
+   
+    .top-content-dock {
         position:relative;
-    
+        
         .logo {
+            display:inline-block;
             background-image: url("/images/logo-HPF.svg");
             background-size: cover;
             background-position: center;
@@ -40,15 +42,47 @@ header {
             letter-spacing: -0.02em;
             line-height: 1
         }
-    
-    }
 
-    .right-block {
-        position:relative;
+        .account-buttons {
+            position:absolute;
+            right:2.0em;
+            top:2.5em;
+            bottom:0;
+            height:125px;
 
-        .right-block-account-buttons {
-            display:inline-block;
+            li {
+                display:inline-block;
+            }
+
+                .button {
+                    text-align: center;
+                    line-height: 1;
+                    cursor: pointer;
+                    vertical-align: middle;
+                    border: 1px solid transparent;
+                    border-radius: .25rem;
+                    padding: 1.5em 2em 1.6em;
+                    margin: 0 0 1.5rem 0;
+                    font-size: 0.75em;
+                    background-color: #588d32;
+                    color: #fff;
+                }
+          }
+    } //Top content dock
+
+    .navi-bar-wrapper {
+        padding:20px;
+
+        .navi-bar-dock {
+
+            .navi-bar-items {
+                
+                li {
+                    display:inline-block;
+                }
+            }
         }
     }
 
-}
+} //Top bar wrapper
+
