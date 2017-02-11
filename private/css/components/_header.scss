@@ -87,6 +87,7 @@ header {
     }//Top content dock
 
     .navi-bar-wrapper {
+        position:relative;
         
         .navi-bar-dock {}
 
@@ -97,11 +98,19 @@ header {
         li {
             display:inline-block;
             padding: 1.25rem 1.25rem;
-            font-size: 0.775em;
+            font-size: 0.8em;
             line-height: 1;
             color: #333;           
         }
 
+        .right-cart-dock {
+            position:absolute;
+            padding-right: 2.75em;
+            padding-bottom: 1.7em;
+            font-size: 0.75em;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            line-height: 1.2em
+        }
     }
-
 }
