@@ -1,3 +1,26 @@
 .page-index {
-    
+
+.carousel-wrapper {
+    height: 37.5em;
+}
+
+.carousel-dock {
+    height:100%;
+
+    .first-slide {
+        background-image: url('/images/Carousel1.jpg');
+        height:100%;
+    }
+
+    .second-slide {
+        background-image: url('/images/Carousel2.jpg');
+        height:100%;
+    }
+
+    .third-slide {
+        background-image: url('/images/Carousel3.jpg');
+        height:100%;
+    }
+}
+
 }
