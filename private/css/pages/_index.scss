@@ -1,47 +1,49 @@
 .page-index {
 
-.carousel-wrapper {
-    height: 37.5em;
-}
+    .carousel-wrapper {
+    
+    }
 
-.carousel-dock {
-    height:37.5em;
+    .carousel-dock {
 
-    .first-slide {
-        .first-img {
-            background-image: url('/images/Carousel1.jpg');
-            height:37.5em;
-            width:100%;
+        .slide {
+            height:300px;
+            //width:100%; it's a block
+        }
+
+        .img {
+            height:300px;
+            //width:100%; it's a block
             object-fit: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-    }
 
-    .second-slide {
-        .second-img {
-            background-image: url('/images/Carousel2.jpg');
-            height:37.5em;
-            width:100%;
-            object-fit: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        .first-slide {
+            .first-img {
+                background-image: url('/images/Carousel1.jpg');
+            }
+        }
+
+        .second-slide {
+            .second-img {
+                background-image: url('/images/Carousel2.jpg');
+            }
+        }
+
+        .third-slide {
+            .third-img {
+                background-image: url('/images/Carousel3.jpg');
+            }
+        }
+
+        //below isn't needed but it makes your cursor a hand, which is gangster
+        .slide {
+            cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/openhand.cur), default !important;
+            &:focus { outline:none !important; }   
+            &:active { cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/closedhand.cur), default !important; } 
         }
     }
-
-    .third-slide {
-        .third-img {
-            background-image: url('/images/Carousel3.jpg');
-            height:37.5em;
-            width:100%;
-            object-fit: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-}
 
 }
