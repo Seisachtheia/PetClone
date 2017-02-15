@@ -7,18 +7,20 @@
     .carousel-dock {
 
         .slide {
-            height:300px;
-            //width:100%; it's a block
+            height:750px;
+            position:relative;
+            
         }
 
         .img {
-            height:300px;
-            //width:100%; it's a block
+            height:750px;
             object-fit: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+
 
         .first-slide {
             .first-img {
@@ -43,6 +45,42 @@
             cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/openhand.cur), default !important;
             &:focus { outline:none !important; }   
             &:active { cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/closedhand.cur), default !important; } 
+        }
+
+        h3 {
+            z-index: 1;
+            position:absolute;
+            font-size: 2.5em;
+            max-width: 14em;
+            margin: 0 auto;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+            top:35%;
+            left:50%;
+            transform: translateX(-50%);
+            line-height: 1.2;
+            text-align: center;
+
+        }
+
+        .button {
+            text-align: center;
+            position:absolute;
+            z-index:1;
+            bottom:40%;
+            margin:0 auto;
+            width:150px;
+            line-height: 1;
+            cursor: pointer;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            padding: 1.5em 2em 1.6em;
+            margin: 0 0 1.5rem 0;
+            font-size: 0.75em;
+            background-color: #588d32;
+            color: #fff;
         }
     }
 
