@@ -72,8 +72,6 @@
             left:50%;
             transform: translateX(-50%);
             margin:0 auto;
-            //width:120px;
-            //height:28px;
             line-height: 1;
             cursor: pointer;
             vertical-align: middle;
@@ -84,6 +82,26 @@
             background-color: #588d32;
             color: #fff;
             font-size:1em;
+
+        }
+    }
+
+    .float-div {
+        float:left;
+        height:640px;
+        width:360px;
+        margin: 2em 1em 0em 1em;
+        padding:10px;
+       
+
+        .first-div {
+            height:580px;
+            width:350px;
+            background-image: url('/images/float1.jpg');
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 
         }
     }
